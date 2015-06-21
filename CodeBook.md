@@ -32,7 +32,7 @@ R Scripting is used for extracting the data to local folder and a sequence of st
 
 Command used for extracting the source files (all the variables should be preset):
 
-```R code
+```
 #to download the file from sourceUrl to a local file, sourceFile
 download.file(sourceUrl, sourceFile) 
 
@@ -80,7 +80,7 @@ Dataset from above step is transformed into another tidy dataset with average of
 
 dpply() and numcolwise() functions are used to generate the new tidy dataset.
 
-```R code
+```
 new_tidy_data <- ddply(new_selected_data, .(subject_id,activity), numcolwise(mean))
 ```
 
